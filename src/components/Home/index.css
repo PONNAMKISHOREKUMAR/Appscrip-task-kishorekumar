@@ -1,0 +1,119 @@
+/* General container for the home page */
+.home-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px; /* Add space between child elements */
+    overflow-y: auto;
+    margin-bottom: 100px;
+  }
+  
+  /* Title container */
+  .title-container {
+    width: 100%;
+    max-width: 800px; /* Limit width for better alignment */
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #252020;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    padding: 0 20px; /* Add padding for better readability */
+  }
+  
+  /* Products container grid */
+  .products-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to 1 product per row */
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .home-container {
+      padding: 40px;
+    }
+  
+    .title-container {
+      padding-bottom: 30px;
+    }
+  
+    .products-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 products per row on tablet */
+    }
+  
+    .title {
+      font-size: 48px; /* Larger title for tablet */
+    }
+  
+    .description {
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .products-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 products per row on large screens */
+    }
+  
+    .title {
+      font-size: 60px; /* Even larger title for larger screens */
+    }
+  
+    .description {
+      font-size: 22px;
+    }
+  }
+  
+  /* Loader container */
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffff;
+  }
+  
+  /* Failure view styling */
+  .failure_view {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .failure_image {
+    width: 200px;
+    height: auto;
+  }
+  
+  .failure-description {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .failure_button {
+    padding: 10px 20px;
+    background-color: #0284C7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .failure_button:hover {
+    background-color: #0276a3;
+  }

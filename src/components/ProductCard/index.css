@@ -1,0 +1,120 @@
+/* Product card container styling */
+.product-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Add space between the title, image, and sign-in */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    width: 300px;
+    height: 500px; /* Fixed height for the card */
+    padding: 10px;
+}
+
+.product-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure the elements are spaced out within the card */
+    height: 100%; /* Fill the full height of the card */
+}
+
+.product-image {
+    width: 200px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0; /* Adjust margin to provide spacing from image */
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.sign-in-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto; /* Push it to the bottom of the card */
+    width: 100%;
+}
+
+.sign-in {
+    font-size: 14px;
+    color: #777;
+    text-decoration: none; /* Remove underline from paragraph */
+}
+
+.fav-icon {
+    font-size: 24px;
+    color: #000;
+}
+span {
+    text-decoration: underline;}
+
+/* Styling for span elements with underline */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 769px) {
+    .product-card-container {
+        width: 300px;
+        height: 500px; /* Ensure card maintains height */
+        padding: 10px;
+    }
+
+    .product-card {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%; /* Fill the full height of the card */
+    }
+
+    .product-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px 0; /* Provide space above and below the title */
+        width: 100%;
+        text-align: center;
+        color: #333;
+    }
+
+    .product-image {
+        width: 200px;
+        height: 300px;
+    }
+
+    .sign-in-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto; /* Ensure it stays at the bottom */
+        width: 100%;
+    }
+
+    .sign-in {
+        font-size: 14px;
+        color: #777;
+        text-decoration: none; /* Remove underline from paragraph */
+    }
+
+    .fav-icon {
+        font-size: 24px;
+        color: #000;
+    }
+}

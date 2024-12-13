@@ -1,0 +1,40 @@
+.cart-container {
+    padding: 20px;
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .cart-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .cart-item-details {
+    text-align: left;
+  }
+  
+  .sign-in-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .sign-in-link:hover {
+    color: darkblue;
+  }

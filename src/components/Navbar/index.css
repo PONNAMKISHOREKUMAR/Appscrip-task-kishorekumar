@@ -1,0 +1,124 @@
+.navbar-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    position: relative;
+    width: 100vw;
+  }
+  
+  .navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .website-link,
+  .website-name {
+    display: none;
+  }
+  
+
+  .hamburger-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .menu-list {
+    display: none;
+    flex-direction: row;
+    padding: 10px;
+    list-style: none;
+    background: #fff;
+    position: absolute; /* Ensure the menu appears below the header */
+    top: 60px; /* Adjust to match header height */
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .menu-list.open {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    margin: 0px; /* Horizontal spacing */
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .navbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .header-icons-container {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .header-icon-list .icon {
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .select-items {
+    border: none;
+    background: #fff;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-container {
+      flex-direction: row; /* Arrange items in a row on larger screens */
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .menu-list {
+      display: flex;
+      position: static; /* Default positioning for larger screens */
+      flex-direction: row;
+      gap: 15px;
+      box-shadow: none; /* Remove shadow */
+    }
+  
+    .hamburger-icon {
+      display: none; /* Hide the hamburger icon on larger screens */
+    }
+    
+  .website-link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .website-name {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  .icon-logo{
+    width: 50px;
+    height: 50px
+  }
+  
+  }
+
+  .icon-logo{
+    width: 100px;
+    height: 100px
+  }
